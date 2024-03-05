@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SignUp</title>
+	<!-- link external css: styles.css -->
+	   <link rel="stylesheet" href="style.css">
+</head>
+	<body>
+<p><a href="index2.html">Home</a></p>
+<p><a href="photos.html">Photos</a></p>
+<p><a href="factors.html">selfcare factors</a></p>
+<p><a href="table.html">selfcare comparison</a></p>
+<p><a href="signup.html">selfcare comparison</a></p>
+
+
+		<!-- list of links -->
+		<ul class="topList">
+			<li><a href="home.html" class="topLinks">Home</a></li>
+			<li><a href="" class="topLinks">About</a></li>
+			<li style="float: right;"><a href="" class="topLinks">Courses</a></li>
+			<li style="float: right;"><a href="signup.html" class="topLinks active" >SignUp</a></li>
+		</ul>
+
+		<h1>Sign Up</h1>
+		<div class="signUp">
+		<form onsubmit="validateForm()">
+			<label>First Name</label>
+			<input type="text" name="firstname" placeholder="Enter First name">
+			<br>
+			<label>Last Name</label>
+			<input type="text" name="lastname" placeholder="Enter Last name">
+			
+			<label>Email</label>
+			<input type="email" name="useremail" placeholder="Enter email">
+			<label>Account Type</label>
+			<select>
+				<option>--select account--</option>
+				<option>Student</option>
+				<option>Lecturer</option>
+			</select>
+			<label>Password</label>
+			<input type="password" name="userpassword" placeholder="Enter Password">
+			<input type="submit" name="SignUp" value="SignUp">
+		</form>
+	</div>
+	</body>
+</html>
