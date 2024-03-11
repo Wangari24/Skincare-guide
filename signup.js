@@ -1,29 +1,14 @@
-function validateForm(){
-	 let firstName=
-	 document.getElementByid('firstname').value;
-	 let lastName=
-	 document.getElementByid('lastname').value;
-	 let email=
-	 document.getElementByid('useremail').value;
-	 let password=
-	 document.getElementByid('Account type').value;
+ 
+    function validateForm() {
+        var firstName = document.getElementById("firstname").value.trim();
+        var lastName = document.getElementById("lastname").value.trim();
+        var email = document.getElementById("useremail").value.trim();
+        var accountType = document.getElementById("accountType").value;
+        var password = document.getElementById("userpassword").value.trim();
 
-	 if(firstName=="" || lastName=="" || email=="" ||password==||"")
-	 	alert("Field should not be blank");
-	 else if(!firsTname.match(^[A-Za-z]+$/))
-	 	document.getElementByid('result').innerHTML=
-	    "FirstName should have alphabetic characters only:"
-	    return false;
-	    else if(password.length<8){
-	    	document.getElementByid('result 2').innerHTML
-	    	"Password should have atleast 8 characters"
-	    	return false;
-	    }
-	    else{
-	    	alert ("success");
-	   
+        if (firstName === "" || lastName === "" || email === "" || accountType === "--select account--" || password === "") {
+            alert("Please fill out all fields.");
+            return false; // Prevent form submission
+        
+    }
 
-
-	 }
-	}
-}
