@@ -3,9 +3,9 @@ session_start();
 
 // Database connection
 $host = 'localhost';
-$username = 'your_username';
-$password = 'your_password';
-$database = 'your_database';
+$username = 'Winnie_Mungai';
+$password = '152649';
+$database = 'selfcare guide';
 
 $conn = new mysqli($host, $username, $password, $database);
 if ($conn->connect_error) {
