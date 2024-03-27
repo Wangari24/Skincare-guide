@@ -1,6 +1,6 @@
 body{
 	background-color: slategrey;
-	background-image:url(background2.jpeg);
+	background-image:url(background2.jpeg); 
 }
 
 h1{
@@ -29,4 +29,8 @@ nav a {
 nav a: hover{
 	color: white;
 
+}
+.navbar{
+	float: right;
+	float color: pink;
 }

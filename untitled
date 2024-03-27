@@ -1,0 +1,40 @@
+<?php
+// Start session
+session_start();
+
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $username = $_POST["username"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
+    // Validate form data (you may need more robust validation)
+    if (!empty($username) && !empty($email) && !empty($password)) {
+        // Process signup (you may need to add database interaction here)
+        // For demonstration, let's just echo the signup data
+        echo "Sign up successful!<br>";
+        echo "Username: $username<br>";
+        echo "Email: $email<br>";
+        echo "Password: $password<br>";
+    } else {
+        echo "Please fill out all the fields.";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+</head>
+<body>
+    <h2>Sign Up</h2>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        Username: <input type="text" name="username"><br>
+        Email: <input type="email" name="email"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>
